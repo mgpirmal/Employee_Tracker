@@ -119,23 +119,23 @@ function runSearch() {
       {
         name: "newEmpFirstName",
         type: "input",
-        message: "What is the new employee's first name? (Required.)"
+        message: "What is the new employee's first name?"
       },
       {
         name: "newEmpLastName",
         type: "input",
-        message: "What is the new employee's last name? (Required.)"
+        message: "What is the new employee's last name?"
       },
       {
         name: "newEmpDept",
         type: "list",
-        message: "What is the new employee's department? (Required)",
+        message: "What is the new employee's department?",
         choices: ['Management', 'General', 'IT', 'Accounting',]
       },
       {
         name: "newEmpSalary",
         type: "input",
-        message: "What is the new employee's salary? (Required)"
+        message: "What is the new employee's salary?"
       },
       {
         name: "newEmpManager",
@@ -419,6 +419,6 @@ function runSearch() {
   }
 
   function endSession() {
-    console.log("Session ended. Thanks for using Employee Tracker CMS.");
+    console.log("Session ended.");
     connection.end();
   }
